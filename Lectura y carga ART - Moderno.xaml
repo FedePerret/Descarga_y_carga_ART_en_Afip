@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="756,1855" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="818,3931" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -124,7 +124,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="766,1790" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="828,3866" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="Contribuyentes" />
       <Variable x:TypeArguments="x:Boolean" Name="domicilio" />
@@ -136,7 +136,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Descargar Alicuotas de AFIP" sap:VirtualizedContainerService.HintSize="704,121" sap2010:WorkflowViewState.IdRef="Sequence_35">
+    <Sequence DisplayName="Descargar Alicuotas de AFIP" sap:VirtualizedContainerService.HintSize="766,121" sap2010:WorkflowViewState.IdRef="Sequence_35">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -709,14 +709,14 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:OpenBrowser>
     </Sequence>
-    <Sequence DisplayName="Cargar Alicuotas nuevas en Declaraciones en línea" sap:VirtualizedContainerService.HintSize="704,1473" sap2010:WorkflowViewState.IdRef="Sequence_36">
+    <Sequence DisplayName="Cargar Alicuotas nuevas en Declaraciones en línea" sap:VirtualizedContainerService.HintSize="766,3549" sap2010:WorkflowViewState.IdRef="Sequence_36">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Ámbito de aplicación de Excel" sap:VirtualizedContainerService.HintSize="642,318" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000" Visible="False" WorkbookPath="C:\Users\Fede\Desktop\Alicuotas.xlsx">
+      <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Ámbito de aplicación de Excel" sap:VirtualizedContainerService.HintSize="704,318" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000" Visible="False" WorkbookPath="C:\Users\Fede\Desktop\Alicuotas.xlsx">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>
@@ -739,7 +739,7 @@
           </ActivityAction>
         </ui:ExcelApplicationScope.Body>
       </ui:ExcelApplicationScope>
-      <ui:FilterDataTable DataTable="[Contribuyentes2]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="642,201" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[CambiarArt]" SelectColumnsMode="Remove">
+      <ui:FilterDataTable DataTable="[Contribuyentes2]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="704,201" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[CambiarArt]" SelectColumnsMode="Remove">
         <ui:FilterDataTable.Filters>
           <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
             <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -758,31 +758,31 @@
           </scg:List>
         </ui:FilterDataTable.SelectColumns>
       </ui:FilterDataTable>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Chrome: Acceso con Clave Fiscal - AFIP" sap:VirtualizedContainerService.HintSize="642,826" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="8b7b3774-9552-4fc1-b551-28356b7c82b8" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Chrome: Acceso con Clave Fiscal - AFIP" sap:VirtualizedContainerService.HintSize="704,2772" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="8b7b3774-9552-4fc1-b551-28356b7c82b8" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="608,586" sap2010:WorkflowViewState.IdRef="Sequence_34">
+            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="670,2515" sap2010:WorkflowViewState.IdRef="Sequence_34">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CambiarArt]" DisplayName="Para cada fila de la tabla de datos" sap:VirtualizedContainerService.HintSize="546,499" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CambiarArt]" DisplayName="Para cada fila de la tabla de datos" sap:VirtualizedContainerService.HintSize="608,2428" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="512,310" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                    <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="574,2239" sap2010:WorkflowViewState.IdRef="Sequence_26">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="loguearse" sap:VirtualizedContainerService.HintSize="450,121" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                      <Sequence DisplayName="loguearse" sap:VirtualizedContainerService.HintSize="512,121" sap2010:WorkflowViewState.IdRef="Sequence_25">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -823,7 +823,7 @@
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Escribir en 'INPUT  F1:password'" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,195" sap2010:WorkflowViewState.IdRef="TypeInto_8" SimulateType="True" Text="[CurrentRow(&quot;AFIP&quot;).ToString]">
+                        <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Escribir en 'INPUT  F1:password'" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,195" sap2010:WorkflowViewState.IdRef="TypeInto_8" SimulateType="False" Text="[CurrentRow(&quot;AFIP&quot;).ToString]">
                           <ui:TypeInto.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dbad7c37-fc6d-4010-96de-39d8650c4059" InformativeScreenshot="55f4c9e9f600bdbf660fda21047d526f" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
                               <ui:Target.TimeoutMS>
@@ -858,10 +858,10 @@
                           </ui:Click.Target>
                         </ui:Click>
                       </Sequence>
-                      <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="512,1700" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                      <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="512,2033" sap2010:WorkflowViewState.IdRef="Sequence_39">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -875,52 +875,51 @@
                             </ui:Target>
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <If Condition="[domicilio = True]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="450,1335" sap2010:WorkflowViewState.IdRef="If_4">
+                        <If Condition="[domicilio = True]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="450,1645" sap2010:WorkflowViewState.IdRef="If_4">
                           <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,1096" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,1406" sap2010:WorkflowViewState.IdRef="Sequence_28">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'INPUT  buscadorInput'" sap:VirtualizedContainerService.HintSize="354,195" sap2010:WorkflowViewState.IdRef="TypeInto_9" Text="Declaracion en linea">
-                                <ui:TypeInto.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aa47dc20-ac3b-4178-a0cc-c416d46c2d42" InformativeScreenshot="28d4ce0ebcde9a8fe9502d1fc5ad2699" Selector="&lt;webctrl id='buscadorInput' tag='INPUT' /&gt;">
-                                    <ui:Target.TimeoutMS>
-                                      <InArgument x:TypeArguments="x:Int32" />
-                                    </ui:Target.TimeoutMS>
-                                    <ui:Target.WaitForReady>
-                                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                                    </ui:Target.WaitForReady>
-                                  </ui:Target>
-                                </ui:TypeInto.Target>
-                              </ui:TypeInto>
-                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'P'" sap:VirtualizedContainerService.HintSize="354,147" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT">
-                                <ui:Click.CursorPosition>
-                                  <ui:CursorPosition Position="Center">
-                                    <ui:CursorPosition.OffsetX>
-                                      <InArgument x:TypeArguments="x:Int32" />
-                                    </ui:CursorPosition.OffsetX>
-                                    <ui:CursorPosition.OffsetY>
-                                      <InArgument x:TypeArguments="x:Int32" />
-                                    </ui:CursorPosition.OffsetY>
-                                  </ui:CursorPosition>
-                                </ui:Click.CursorPosition>
-                                <ui:Click.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f013c72-8d61-4b95-a6e3-efe526b4b68b" InformativeScreenshot="c8015b61d7629da39dbdb8cf0151249b" Selector="&lt;webctrl tag='P' /&gt;">
-                                    <ui:Target.TimeoutMS>
-                                      <InArgument x:TypeArguments="x:Int32" />
-                                    </ui:Target.TimeoutMS>
-                                    <ui:Target.WaitForReady>
-                                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                                    </ui:Target.WaitForReady>
-                                  </ui:Target>
-                                </ui:Click.Target>
-                              </ui:Click>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'INGRESE...'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b7b3774-9552-4fc1-b551-28356b7c82b8" Version="V3">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Registro Único'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8b7b3774-9552-4fc1-b551-28356b7c82b8" Text="Declaracion en linea" Version="V3">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://portalcf.cloud.afip.gob.ar/portal/app/" CvTextArea="123, 409, 400, 23" CvTextArgument="¿Que necesitas? Busca tramites y servicios" CvType="Text" DesignTimeRectangle="113, 440, 1140, 65" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='buscadorInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='buscadorInput' tag='INPUT' type='text' class='rbt-input-main form-control rbt-input form-control input-lg' placeholder='¿Qué necesitás? | Buscá trámites y servicios' aaname='Buscador' /&gt;" Guid="8a34489e-d29a-41d2-aac9-8f047bb0b3d1" InformativeScreenshot="b159c2c9ab00f337cfe5f113fc8cae48.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal de Clave Fiscal' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="398, 315, 142, 70" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Registro Único Tributario' parentid='contenidoAccesosPrincipales' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Registro Único Tributario' parentid='contenidoAccesosPrincipales' tag='DIV' type='' class='col-xs-12 col-lg-8 medium encode-sans-font' check:innerText='Registro Único Tributario' /&gt;" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Declaración en línea'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b7b3774-9552-4fc1-b551-28356b7c82b8" Version="V3">
                                 <uix:NClick.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://serviciosweb.afip.gob.ar/TRAMITES_CON_CLAVE_FISCAL/DJPROFORMA/app/index.aspx" CvElementArea="298, 258, 101, 19" CvTextArea="314, 262, 68, 11" CvTextArgument="INGRESE..." CvType="Button" DesignTimeRectangle="313, 260, 72, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='ctl00_MenuPrincipal_Menu1_1 NetMenuRootItem ctl00_MenuPrincipal_Menu1_3 ctl00_MenuPrincipal_Menu1_15 NetMenuRootItemSelected' aaname='INGRESE...' check:innerText='INGRESE...' /&gt;" Guid="303a2851-1fce-4931-a540-1e94131cc9d6" InformativeScreenshot="2a731115e05b6ef84f842d9a92b1a11f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='padre' title='Declaración en línea - Página Principal' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                  <uix:TargetAnchorable BrowserURL="https://portalcf.cloud.afip.gob.ar/portal/app/" CvTextArea="128, 547, 184, 18" CvTextArgument="Declaracion en linea" CvType="Text" DesignTimeRectangle="129, 543, 823, 29" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='small text-muted' aaname='Declaración en línea' check:innerText='Declaración en línea' /&gt;" Guid="052cba39-b330-474e-ae65-5faddaefa81c" InformativeScreenshot="bb32a8be0290848025e5170e18e9c79e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal de Clave Fiscal' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NHover DisplayName="Mantener el puntero 'INGRESE...'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NHover_2" ScopeIdentifier="8b7b3774-9552-4fc1-b551-28356b7c82b8" Version="V3">
+                                <uix:NHover.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://serviciosweb.afip.gob.ar/TRAMITES_CON_CLAVE_FISCAL/DJPROFORMA/app/index.aspx" CvElementArea="298, 258, 102, 19" CvTextArea="313, 262, 70, 11" CvTextArgument="INGRESE..." CvType="Button" DesignTimeRectangle="313, 260, 72, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='ctl00_MenuPrincipal_Menu1_1 NetMenuRootItem ctl00_MenuPrincipal_Menu1_3' aaname='INGRESE...' check:innerText='INGRESE...' /&gt;" Guid="333ac2a3-635e-4f49-876d-44c3c5ea3639" InformativeScreenshot="39a7dded2421369c6c830248afe9be1e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='padre' title='Declaración en línea - Página Principal' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="298, 129, 770, 50" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='ImagenHeader' parentid='aspnetForm' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='ImagenHeader' parentid='aspnetForm' type='' tag='IMG' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NHover.Target>
+                              </uix:NHover>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'INGRESE...'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b7b3774-9552-4fc1-b551-28356b7c82b8" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://serviciosweb.afip.gob.ar/TRAMITES_CON_CLAVE_FISCAL/DJPROFORMA/app/index.aspx" CvTextArea="314, 344, 250, 13" CvTextArgument="_para actualizar sus datos de Empleador" CvType="Text" DesignTimeRectangle="300, 343, 358, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='' aaname='                                  para actualizar sus datos de Empleador             ' check:innerText='para actualizar sus datos de Empleador' /&gt;" Guid="a2e33301-61f6-4a0b-99ab-8509c263cf6b" InformativeScreenshot="d2ab447e8f794ae2522bf40e040fbf77.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='padre' title='Declaración en línea - Página Principal' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CvTextArea="313, 262, 70, 11" CvTextArgument="INGRESE..." CvType="Text" DesignTimeRectangle="299, 259, 100, 17" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='' check:innerText='INGRESE...' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
                                 </uix:NClick.Target>
                               </uix:NClick>
                               <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Escribir en 'INPUT  buscadorInput'" sap:VirtualizedContainerService.HintSize="354,195" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="[CurrentRow(&quot;alicuota&quot;).ToString]">
@@ -1005,7 +1004,19 @@
           <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJUSURBVDhPY8AA5SsZGIqWsbBXry4Sa97wUap1038QFmpY/4yhbEUIQ8lyBoZSoBqcAGRA4VIdla6t9zdde/r/wrP3/y8C8YwTd0CG7GcoWCoMVoMVACUk2zYCbVjRXLTl/P+///79h4GP33/995x38CvQdYFAl0A1oAOQyQVLFWXbN185+egtVCsCzD519z9H9ZrVDAVLuDBdUQYUKAWaXLw8L2n1qb8///yFakOAJx++/TefsvsV0ItWmAaAbV8iLta04cTOW8+hWlDBB6A37Gfs+w+0ZDJj5SoWVENA/ipaFhe0+MiPLz9/Q7Wggq03nv3Xn7Dzv2TLxgfA2NBlrIAZAPE7P0/t2u0rLjyEKkcFP37//Z+46tT/roM3/hduPv8faGH9uefvoAaA/F+41Nt51v7Pb77+hGpBBccfvvnvNGv///vvvvw/8ejNf5m2TReBLlaG2J6/hIO9avXSacfvQJWjAlBslmy98L9i+0UwH+SauJUnfwEDvRJmu53p5N2vH77/ClaADm68+vTfEWj7uafvoCL//28Dhodo04ZbDAx5S1iZKlZObd13DSqFCToPXP/vv/DI/2svP/6/8+bz/7tvP/8/BvSSbv+O/6DAM1Hv2fYAJIkNPPv0/b/ZlN0/BBvW39Xs3X4ThlW7t17nrVsLdH75yqnl2y/+RU62yGDBmfv/OavXbAF6U40hZ5EcEMuDce5iWaDlXAycNWuuJ6w6CYye6/879qPi9v3XQCnvPTDOQ/Cl/yyggsnAKJnMUIyBpwDlYoFqOMGxhQEYGAAWFU0khUyfAwAAAABJRU5ErkJggg==" InformativeScreenshot="4845f9183f64b8645a61ca9465d8349c.jpg" Selector="&lt;html app='chrome.exe' title='Acceso con Clave Fiscal - AFIP' /&gt;" Title="Acceso con Clave Fiscal - AFIP" Url="https://auth.afip.gob.ar/contribuyente_/login.xhtml" />
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
+      <ui:CloseApplication DisplayName="Cerrar aplicación 'push button  Cerrar'" sap:VirtualizedContainerService.HintSize="704,130" sap2010:WorkflowViewState.IdRef="CloseApplication_2">
+        <ui:CloseApplication.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d4e0405e-7bac-4ab5-a520-cafe2745fdaa" InformativeScreenshot="7bab81b8ce7f01c04e5bf8eb47d05c4d" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Nueva pestaña - Google Chrome' /&gt;&lt;ctrl name='Nueva pestaña - Google Chrome - Federico' role='pane' /&gt;&lt;ctrl name='Cerrar' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:CloseApplication.Target>
+      </ui:CloseApplication>
     </Sequence>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="704,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Terminado&quot;]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="766,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Terminado&quot;]" />
   </Sequence>
 </Activity>

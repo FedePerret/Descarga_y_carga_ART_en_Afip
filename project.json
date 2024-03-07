@@ -2,7 +2,7 @@
   "name": "Leer Alicuota ART",
   "projectId": "4cb80cdf-3130-4dc0-acd4-8762bd1f7c2f",
   "description": "Proceso en blanco",
-  "main": "Lectura y carga ART - Moderno.xaml",
+  "main": "Lectura y carga ART.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.23.2-preview]",
     "UiPath.Mail.Activities": "[1.22.1]",
@@ -49,14 +49,14 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Lectura y carga ART.xaml",
-      "uniqueId": "1e8ecdab-e003-4509-8bec-3534931d2549",
+      "filePath": "Lectura y carga ART - Moderno.xaml",
+      "uniqueId": "7d5a7178-3e87-4a7e-9ebb-b087b352e512",
       "input": [],
       "output": []
     },
     {
-      "filePath": "Lectura y carga ART - Moderno.xaml",
-      "uniqueId": "7d5a7178-3e87-4a7e-9ebb-b087b352e512",
+      "filePath": "Lectura y carga ART.xaml",
+      "uniqueId": "fb7ccd3d-4631-48e4-83a8-3c50f2b0e362",
       "input": [],
       "output": []
     }
